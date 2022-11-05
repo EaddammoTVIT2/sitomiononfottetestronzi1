@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="it" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Fr3zez">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+
+    <title>CoralMC | Home</title>
+
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <link href="css/all.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,800,800i&display=swap" rel="stylesheet">
+
+    <script defer src="js/all.js"></script>
+    <script src="js/player-counter.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+  </head>
+  <body>
+
+    <div class="logo_due">
+      <img src="https://i.imgur.com/NZ3U19S.png" alt="CoralMC Forum">
+    </div>
+
+    <div id="copied" class="copied">
+      <div id="card" class="card">
+
+        <h1>IP copiato!</h1>
+
+        <h2>Speriamo di vederti online ;)</h2>
+
+        <div class="close" onclick="closed()">
+          <button class="btn">Close</button>
+        </div>
+      </div>
+    </div>
+
+  <div class="wrapper" id="top">
+
+    <div class="header">
+
+      <div class="logo">
+        <img src="https://i.imgur.com/NZ3U19S.png" alt="CoralMC Forum">
+      </div>
+
+      <div class="curve-container">
+          <svg class="curve" xmlns="http://www.w3.org/2000/svg" width="1440" height="40" viewBox="0 0 1440 40">
+              <path d="M0,27.01C239.659,7,479.143,0,718.453,0S1198.28,7,1440,27.01V40H0Z" fill-rule="evenodd"></path>
+          </svg>
+      </div>
+
+      <div class="ip" onclick="copy()">
+        <h2>CORALMC.IT</h2>
+        <p>Entra con altri <span data-playercounter-ip="play.coralmc.it"></span> player</p>
+        <div class="image">
+          <i class="fas fa-gamepad" style="color: white; font-size: 40px;"></i>
+        </div>
+      </div>
+
+      <div class="ts">
+      <a href="ts3server://ts.coralmc.it" target="_blank">
+        <h2>TEAMSPEAK SERVER</h2>
+        <p>Entra nella nostra community!</p>
+        <div class="image">
+          <i class="fab fa-teamspeak" style="color: white; font-size: 40px;"></i>
+        </div>
+        </a>
+      </div>
+
+    </div>
+
+    <div class="content">
+
+      <div class="nav">
+
+        <a href="https://www.coralmc.it/forum/index.php"><button class="btn">Forum</button></a>
+        <a href="https://discord.com/invite/MGW42TXHBd"><button class="btn">Discord</button></a>
+        <a href="https://store.coralmc.it"><button class="btn">Store</button></a>
+        <a href="https://www.minecraft-italia.it/server/coralmc"><button class="btn">Vota</button></a>
+        <a href="https://t.me/CoralMC"><button class="btn">Telegram</button></a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <section id="footer">
+    <div class="footer">
+
+      <div class="top-content">
+        <div class="left">
+          <p class="main">Gioca ora su <button class="ip" onclick="copy()">coralmc.it</button></p>
+          <p>CoralMC è un server nato nel marzo 2020 per rendere il periodo di lockdown il meno
+          frustante possibile. Dato il successo riscontrato abbiamo deciso di ampliarci sempre di più
+          per competere tra i migliori server italiani. Divertiti esplorando il nostro forum!</p>
+        </div>
+        <div class="right">
+          <div class="logo">
+            <img src="img/logo.png">
+          </div>
+        </div>
+      </div>
+
+      <div class="lower-content">
+        <div class="left">
+          <a href="https://www.dmca.com/Protection/Status.aspx?ID=8dd1ab29-6875-44ac-bd79-156450972f7d&refurl=https://www.coralmc.it/forum/index.php"><img src="https://images.dmca.com/Badges/dmca-badge-w100-5x1-03.png?ID=8dd1ab29-6875-44ac-bd79-156450972f7d" alt="DMCA.com Protection Status">
+        </div>
+        <div class="right">
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <input type="text" id="ipServer" value="CoralMC.it">
+
+  <script type="text/javascript">
+
+    	function copy() {
+        document.getElementById("ipServer").select(), document.execCommand("copy")
+
+        document.getElementById("card").style.opacity = "1";
+ 	      document.getElementById("card").style.visibility = "visible";
+        document.getElementById("copied").style.opacity = "1";
+        document.getElementById("copied").style.visibility = "visible";
+    }
+
+  </script>
+
+  <script>
+    $('html, body').animate({
+      scrollTop: $("#top").offset().top
+    }, 2000);
+  </script>
+
+  <script>
+  function closed() {
+     document.getElementById("card").style.visibility = "hidden";
+     document.getElementById("card").style.opacity = "0";
+     document.getElementById("copied").style.opacity = "0";
+     document.getElementById("copied").style.visibility = "hidden";
+  }
+  </script>
+
+  </body>
+</html>
