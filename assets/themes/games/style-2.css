@@ -1,0 +1,19 @@
+
+body .p-4 {
+    padding: 0!important;
+}
+
+main {
+	min-height: calc(100vh - 122px);
+}
+
+.osahan-card img {
+    opacity: 0.8;
+}
+body .osahan-card img:hover {
+    opacity: 1;
+}
+body .osahan-card .osahan-card-body,
+body .price {
+    text-align: center;
+}
